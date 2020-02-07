@@ -1,14 +1,15 @@
 package com.example.javalib;
 
-import android.R;
 
 public class MyClass {
 
-    public MyClass() {
-        assert false;
+    private String a;   
 
-        System.out.println("https://abc:user@password1" + R.class);
-        String store = "https://abc:user@password1";
+    public MyClass() {
+    }
+
+    public String getA() {
+        return a;
     }
 
 }
