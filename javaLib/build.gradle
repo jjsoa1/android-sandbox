@@ -1,0 +1,19 @@
+apply plugin: 'java-library'
+apply plugin: 'com.android.lint'
+
+Map<String, Integer> overrides = ['UnknownNullness': 1]
+
+lintOptions {
+    lintConfig file("lint-java.xml")
+    checkAllWarnings true
+    warningsAsErrors true
+}
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"

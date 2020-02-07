@@ -1,0 +1,12 @@
+
+
+android {
+  lintOptions {
+    if (project.path.contains(':app')) {
+      checkDependencies true
+      checkAllWarnings true
+    } else {
+      
+    }
+  }
+}
